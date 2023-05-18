@@ -37,6 +37,10 @@ public class Factorial {
 		 // Read the input from the user
 		 String input = scanner.nextLine();
 
+
+		 //tries to parse the input as an integer using Integer.parseInt(input)
+		 // if the input is a valid integer between 1 and 10 (both inclusive), it assigns the value to the num variable and returns the number
+		 // if the input is not a valid number or is outside the range, it prints an error message using the printStream variable and returns -1
 		 try {
 			 // parses the input as an integer
 			 int number = Integer.parseInt(input);
@@ -57,8 +61,7 @@ public class Factorial {
 		//YOUR CODE ENDS HERE
 
 	 }
-	
-	 
+
 	 private void calculateFactorial(int num) {
 		
 		  /*
@@ -66,6 +69,8 @@ public class Factorial {
 		  
 		  - All code should be inside the placeholders below.
 		*/
+		 //initializes a variable result to 1 and then uses a for loop to iterate from 1 to the given number (num).
+		 // in each iteration, it multiplies result by the current value of i.
 		 
 		int result = 1;
 		//YOUR CODE STARTS HERE
@@ -81,16 +86,12 @@ public class Factorial {
 		 /*
 		 Do not change this method.
 		 */
-		 	
 		 int input = this.isInputNumberValid();
 		 if(input != -1)
 		 {
 			 calculateFactorial(input);
 		 }
-		 
 	 }
-	
-
 	 public static void main(String[] args) { 
 		/*
 		 Do not change this method.
